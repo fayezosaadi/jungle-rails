@@ -8,12 +8,11 @@ class OrdersController < ApplicationController
     charge = perform_stripe_charge
     order  = create_order(charge)
 
-    if order.valid?
-      empty_cart!
-      redirect_to order, notice: 'Your Order has been placed.'
-    else
-      redirect_to cart_path, error: order.errors.full_messages.first
-    end
+  if order.valid?
+    OrderMailer.order_email(order).deliver
+    empty_cart!
+    redirect_to order, notice: 'Your Order has been placed.'
+  end
 
   rescue Stripe::CardError => e
     redirect_to cart_path, error: e.message
