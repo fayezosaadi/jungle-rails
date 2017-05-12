@@ -1,5 +1,5 @@
 <section class="cart-show">
-
+  <% if cart.size != 0 %>
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
@@ -49,5 +49,12 @@
       <% end %>
     </div>
   </div>
-
+  
+  <% else %>
+  <div>
+  <h2>Your Shopping Cart is empty.</h2>
+  <h6>Your Shopping Cart lives to serve. Give it purpose — fill it with books, super cars, electronics, and more. If you already have an account, Sign In to see your Cart.</h6>
+  <%= link_to 'Home', :root %>
+  </div>
+  <% end %>
 </section>
