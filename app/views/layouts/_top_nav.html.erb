@@ -46,7 +46,7 @@
         </li>
       <% if current_user %>
         <li><span>Signed in as <%= current_user.email %></span></li>
-        <li><%= link_to "Log out", '/sessions', method:'delete' %></li>
+        <li><%= link_to "Log out", '/logout', method:'delete' %></li>
         <% else %>
         <li> <%= link_to 'Login', '/sessions/new'%></li>
         <li> <%= link_to 'Sign up', '/users/new' %></li>

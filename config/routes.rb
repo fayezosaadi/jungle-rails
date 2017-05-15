@@ -21,7 +21,8 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: [:create, :new]
-  resources :sessions, only: [:create, :new, :destroy]
+  resources :sessions, only: [:create, :new]
+  delete '/logout' => 'sessions#destroy'
 
   resources :reviews, only: [:destroy]
   # The priority is based upon order of creation: first created -> highest priority.

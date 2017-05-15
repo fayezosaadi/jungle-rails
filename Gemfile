@@ -35,6 +35,9 @@ gem 'carrierwave'
 gem 'rmagick'
 gem 'stripe'
 gem 'faker'
+gem 'bootstrap_form'
+
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
