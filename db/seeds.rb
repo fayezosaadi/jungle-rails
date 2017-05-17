@@ -134,24 +134,24 @@ prod3 = cat3.products.create!({
 
 ## REVIEWS
 
-puts "Re-creating Reviews ..."
+# puts "Re-creating Reviews ..."
 
-prod1.reviews.create!({
-  description: 'best product on market',
-  user_id: 1,
-  rating: 5
-})
+# prod1.reviews.create!({
+#   description: 'best product on market',
+#   user_id: 1,
+#   rating: 5
+# })
 
-prod2.reviews.create!({
-  description: 'best product on market',
-  user_id: 1,
-  rating: 4
-})
+# prod2.reviews.create!({
+#   description: 'best product on market',
+#   user_id: 1,
+#   rating: 4
+# })
 
-prod2.reviews.create!({
-  description: 'good product',
-  user_id: 2,
-  rating: 3
-})
+# prod2.reviews.create!({
+#   description: 'good product',
+#   user_id: 2,
+#   rating: 3
+# })
 
 puts "DONE!"
