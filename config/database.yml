@@ -82,5 +82,4 @@ test:
 #
 production:
   <<: *default
-  # url: <%= ENV['DATABASE_URL'] %>
-  url: jungle
+  url: <%= ENV['DATABASE_URL'] %>
