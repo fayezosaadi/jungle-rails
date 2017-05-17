@@ -9,7 +9,11 @@ class OrdersController < ApplicationController
     order  = create_order(charge)
 
   if order.valid?
-    OrderMailer.order_email(order).deliver
+    do
+      OrderMailer.order_email(order).deliver
+    rescue error
+      #flash some non-critical error message here
+    end
     empty_cart!
     redirect_to order, notice: 'Your Order has been placed.'
   end
