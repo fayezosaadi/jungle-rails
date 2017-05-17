@@ -1,0 +1,5 @@
+ id | first_name | last_name |     email      |                       password_digest                        |         created_at         |         updated_at         
+----+------------+-----------+----------------+--------------------------------------------------------------+----------------------------+----------------------------
+  1 | Fayez      | Saadi     | ff11@gmail.com | $2a$10$IEqXkQD2NDoHVfmCQQqM/.BISJ/QkfmX87KCl6d0DDw6zQPFx4sfu | 2017-05-17 00:11:37.149857 | 2017-05-17 00:11:37.149857
+(1 row)
+
